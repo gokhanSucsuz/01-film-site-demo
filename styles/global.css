@@ -4,9 +4,7 @@ body {
     background-color: #000;
 }
 
-div[data-nextjs-scroll-focus-boundary] {
-    height: 100%;
-}
+
 
 .container {
     display: grid;
