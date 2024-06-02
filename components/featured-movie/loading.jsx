@@ -1,6 +1,8 @@
 import React from 'react'
-import Loading from "@components/loading"
+
 import styles from "./styles.module.css"
+import Loading from '../loading'
+
 
 const FeaturedLoading = () => {
     return (
