@@ -9,6 +9,7 @@ const Header = () => {
 			<div className={styles.headerWrapper}>
 				<Link href="/" className={styles.logo}>
 					<SiGradleplaypublisher />
+					NETFİLMS
 				</Link>
 				<nav className={styles.navigationMenu}>
 					<Link href="/">
