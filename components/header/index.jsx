@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { SiGradleplaypublisher } from "react-icons/si";
 import styles from "./styles.module.css"
 
 const Header = () => {
@@ -8,7 +7,6 @@ const Header = () => {
 		<header className={`${styles.header} container fluid`}>
 			<div className={styles.headerWrapper}>
 				<Link href="/" className={styles.logo}>
-					<SiGradleplaypublisher />
 					NETFİLMS
 				</Link>
 				<nav className={styles.navigationMenu}>

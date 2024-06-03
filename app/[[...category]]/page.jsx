@@ -6,8 +6,7 @@ async function delay(ms) {
 }
 
 export default async function Home({ params }) {
-    await delay(2000)
-    console.log(params)
+    await delay(1000)
     let selectedCategory;
     if (params?.category?.length > 0) {
         selectedCategory = true
