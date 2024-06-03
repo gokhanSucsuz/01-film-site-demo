@@ -13,7 +13,6 @@ const MoviePage = async ({ params, searchParams }) => {
 
     const res = await getMovie(params.id)
 
-
     const movieDetail = res
     if (!movieDetail) {
         notFound();
