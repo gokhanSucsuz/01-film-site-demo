@@ -1,13 +1,7 @@
 import React from 'react'
 import MovieContainer from '@/containers/movie'
 import { notFound } from 'next/navigation'
-
-const API_URL = "https://api.themoviedb.org/3/"
-
-const getMovie = async (movieId) => {
-    const res = await fetch(`${API_URL}/movie/${movieId}?api_key=${process.env.API_KEY}`)
-    return res.json();
-}
+import { getMovie } from "@/services/movie"
 
 const MoviePage = async ({ params, searchParams }) => {
 
@@ -18,9 +12,9 @@ const MoviePage = async ({ params, searchParams }) => {
         notFound();
     }
 
-    if (searchParams.error === "true") {
-        throw new Error("Error happened!")
-    }
+    // if (searchParams.error === "true") {
+    //     throw new Error("Error happened!")   this code is for frontend now backend is active and it is not neccessary 
+    // }
     return (
         <MovieContainer movie={movieDetail} />
     )
